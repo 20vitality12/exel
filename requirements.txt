@@ -1,0 +1,10 @@
+Webpack
+    Babel
+    Scss
+    Eslint
+    2 Modes
+        -dev
+        dev server, sourceMaps? Eslint? Not Minified JS & CSS
+        -prod
+        Minified Code
+Git
