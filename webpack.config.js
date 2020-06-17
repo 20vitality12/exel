@@ -13,14 +13,14 @@ const jsLoaders = () => {
     const loaders = [
         {
             loader: 'babel-loader',
-            options:{
+            options: {
                 presets: ['@babel/preset-env']
             }
         }
 
     ]
 
-    if(isDev) {
+    if (isDev) {
         loaders.push('eslint-loader')
     }
 
@@ -32,7 +32,7 @@ module.exports = {
     mode: 'development',
     entry: ['@babel/polyfill', './index.js'],
     output: {
-        filename: filename('js'),
+    filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
@@ -49,7 +49,6 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-
         new HTMLWebpackPlugin({
             template: 'index.html',
             minify: {
