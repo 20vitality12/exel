@@ -16,13 +16,14 @@
   }
 
   &:hover {
-    background: #ccc;
+    background: #eee;
     cursor: pointer;
   }
 }
 
+
 @mixin clear-list() {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
